@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="nav.css" />
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .btn {
+        margin-top: 30px;
+        text-align: center;
+      }
+      .form-container {
+        width: 50%;
+        background-color: beige;
+        border: 1px solid beige;
+        border-radius: 20px;
+        box-shadow: 10px 8px 100px grey;
+        padding: 20px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Audiovedio.html">Vedio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="table.html">Table</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-container">
+        <h1>Please fill up the Form</h1>
+        <form>
+          <label for="name">
+            Your Name
+            <input id="name" type="text" placeholder="Enter Your Name" />
+          </label>
+          <label for="email"
+            >Your Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </label>
+          <label for="phone"
+            >Your Phone Number
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Enter Phone Number"
+            />
+          </label>
+          <fieldset style="width: 40%">
+            <legend>Pick One</legend>
+            <label for="cetoi">
+              <input type="radio" name="pita" id="chitoi" />Chitoi
+            </label>
+            <label for="cetoi">
+              <input type="radio" name="pita" id="chitoi" />Puli Pita
+            </label>
+            <label for="cetoi">
+              <input type="radio" name="pita" id="chitoi" />Bapa Pita
+            </label>
+          </fieldset>
+          <fieldset style="width: 40%">
+            <legend>Pick One or More Borta</legend>
+            <label for="Alu">
+              <input type="checkbox" name="borta" id="" />Alu Borta
+            </label>
+            <label for="Begun">
+              <input type="checkbox" name="borta" id="" />Begun Borta
+            </label>
+            <label for="Sorisa">
+              <input type="checkbox" name="borta" id="" />Sorisa Borta
+            </label>
+          </fieldset>
+          <fieldset style="width: 40%">
+            <legend>Special Instruction</legend>
+            <textarea name="" id="" cols="30" rows="02"></textarea>
+            
+          </fieldset>
+          <div class="btn">
+            <input type="reset" value="reset" />
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
